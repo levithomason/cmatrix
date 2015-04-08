@@ -1,7 +1,7 @@
 cmatrix
 =======
 
-![cmatrix Termimal Effect](https://raw.githubusercontent.com/levithomason/cmatrix/master/screenshot.jpg)
+![cmatrix Termimal Effect](https://raw.githubusercontent.com/levithomason/cmatrix/master/screenshot.jpeg)
 
 The original Matrix screen saver effect for your Mac terminal.
 
