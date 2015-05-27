@@ -1,0 +1,34 @@
+cmatrix 1.2a - 03/31/2002
+- Eliminated MAXLINES and MAXCOLS variables, now uses malloc()
+  to allocate the necessary memory for the lines and cols.  Vars 
+  matrix, spaces, length, updates all moved to global variables
+  as pointers.  New function var_init().  New malloc wrapper 
+  nmalloc (taken from nano).
+- Added resize code, mostly taken from nano.  New configure.in checks
+  for resizeterm() and wresize().  New signal handler handle_sighup().
+- The -f option now forces the linux $TERM type ON instead of OFF, since
+  modern Linux systems seem to work fine without it.
+- Added config.sub and config.guess
+- Added cmatrix.spec.in file, based on nanos.spec.in file by 
+  Brett <brett@bad-sports.com>.
+cmatrix-1.1b - 04/09/2000
+- Added support for consolechars command as well as setfont.  Changes
+  affect configure.in and cmatrix.c (main).
+- cmatrix.c:
+  main():
+	- Changed optchr and keypress to ints.  Fixes endless loop
+	  condition on Irix.		
+  c_die():
+	- New function, uses va_args to die with better info on the
+	  screen.
+- configure.in:
+  - Rewrote tests for console and X window font directories.  Moved all
+    font searches to end of the file so error messages could be more
+    easily seen when running configure.
+- Makefile.am:
+  - Better information messages for installing X window fonts.
+
+cmatrix-1.1a - 04/03/2000
+- New autoconf support.  Probably a few things broken but it's a helluva
+  lot better than the previous Makefile stuff.
+- Updated email and web pages in documentation.

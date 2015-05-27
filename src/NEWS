@@ -1,0 +1,24 @@
+03/31/2002 - Happy Easter!  After a long, long dormant period, CMatrix 
+		has finally seen a new release.  The static limitations
+		on size are now history, as the matrix size is allocated
+		dynamically.  CMatrix can now also be resized on the
+		fly. Also, the -f option has been reversed, it now turns
+		the "linux" $TERM type on instead of off; most modern
+		GNU/Linux systems don't seem to need this option anymore.
+		There is now also a .spec file included for easy build.
+
+04/09/2000 - CMatrix 1.1b includes support for the consolechars command
+		as well as the older setfont.  Also included is better
+		autoconf support and more helpful instruction in the
+		Makefiles.
+
+04/03/2000 - CMatrix 1.1a is released.  After a hiatus, interest in the
+		project has seemed to swell, so I'm releasing a 
+		(hopefully) improved and updated version of CMatrix.
+		As with nano, CMatrix has a page at SourceForge.net
+		to further facilitate development, as well as two mailing
+		lists, cmatrix-announce@lists.sourceforge.net and
+		cmatrix-devellists.sourceforge.net.  Anyone is welcome
+		to join and participate in the further development
+		of CMatrix, particularly people have contributed up until
+		now in it's development =-)
